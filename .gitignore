@@ -1,0 +1,15 @@
+# dependencias
+node_modules/
+  
+# build de Next
+.next/
+out/
+
+# variables de entorno
+.env.local
+.env.*.local    
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
