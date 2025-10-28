@@ -1,15 +1,52 @@
-# dependencias
-node_modules/
-  
-# build de Next
-.next/
-out/
+# Node modules
+/node_modules
 
-# variables de entorno
-.env.local
-.env.*.local    
+# Next.js build outputs
+/.next
+/out
+/build
 
-# logs
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Env files (contienen tus keys)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# TypeScript
+*.tsbuildinfo
+
+# VSCode
+.vscode/
+
+# MacOS
+.DS_Store
+
+# Cache y temp de turbopack / tailwind / otros
+/.turbo
+/.cache
+
+# Python artifacts (para tus scripts ML)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+
+# Excel u otros archivos de datos temporales
+*.xlsx
+*.xls
+*.csv
+
+# Optional: lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
