@@ -5,12 +5,13 @@
 /.next
 /out
 /build
+.vercel/
 
 # Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
+pnpm-debug.log* 
 *.log
 
 # Env files (contienen tus keys)
