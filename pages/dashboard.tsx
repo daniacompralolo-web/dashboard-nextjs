@@ -36,7 +36,7 @@ export default function DashboardPage() {
   async function fetchProducts() {
     setLoading(true);
     try {
-      const { data, error } = await supabase.from<Product>("products").select("*").order("created_at", { ascending: false });
+      const { data, error } = await supabase.from("products").select("*").order("created_at", { ascending: false });
       if (error) throw error;
       setProducts(data || []);
     } catch (err: any) {
