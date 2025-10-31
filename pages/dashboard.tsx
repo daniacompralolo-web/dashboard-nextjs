@@ -33,14 +33,14 @@ export default function DashboardPage() {
   });
   const [weights, setWeights] = useState<Record<number, string>>({});
 
-  async function fetchProducts() {
-    setLoading(true);
-    try {
-        const { data, error } = await supabase
-          .from("products")
-          .select("*")
-          .order("created_at", { ascending: false });
-      if (error) throw error;
+    async function fetchProducts() {
+      setLoading(true);
+      try {
+          const { data, error } = await supabase
+            .from("products")
+            .select("*")
+            .order("created_at", { ascending: false });
+        if (error) throw error;
       setProducts(data || []);
     } catch (err: any) {
       console.error("Error fetching products:", err.message || err);
