@@ -1,7 +1,8 @@
-fastapi
-uvicorn
 pandas
 numpy
 scikit-learn
 openpyxl
 joblib
+fastapi
+uvicorn
+xgboost
