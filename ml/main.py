@@ -10,7 +10,7 @@ app = FastAPI(title="Modelo de Predicción de Peso", version="1.0")
 # Cargar el modelo entrenado
 with open("weight_model.pkl", "rb") as f:
     model = pickle.load(f)
-
+    
 # Ruta raíz
 @app.get("/")
 def root():
